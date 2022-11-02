@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --primary-color: #cda460;
+}
+
+body {
+    background-image: url('../Images/artistic-floral-frame-with-white-background_23-2148427861.webp');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-attachment: fixed;
+}
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a.active {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 85px;
+    color:white;
+    background-color: aqua;
+}
+
+header .wrapper {
+    height: 50px;
+    background-color: rgba(207, 175, 175, 0.8);
+}
+
+header {
+    color: white
+    text-decoration: none;
+}
+
+header i {
+    color: var(--primary-color);
+}
+
+header .info-header{
+    height: 35px;
+}
+
+header .header {
+    height: 50px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .contact,
+header .lang a {
+    font-size: 12px;
+}
+
+header nav {
+
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li ul {
+    display: none;
+}
+
+main {
+    height: calc(100vh - 85px);
+    display: flex;
+    align-items: center;
+}
+
+main .container{
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .play-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    border: 10px solid rgba(236, 165, 42, 0.4);
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main .play-icon i {
+    color: white;
+    font-size: 42px;
+    padding-left: 5px;
+}
