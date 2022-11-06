@@ -1,112 +1,351 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
 
 :root{
     --primary-color: #cda460;
-}
+    }
 
-body {
-    background-image: url('../Images/artistic-floral-frame-with-white-background_23-2148427861.webp');
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-attachment: fixed;
-}
-* {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Roboto', sans-serif;
-}
 
-a.active {
+    body {
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), 
+        url('../Images/cover\ 1.jpg');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-attachment: fixed;
+    }
+
+
+    *{
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Playfair Display', serif;
+    }
+
+
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+
+    header {
+        color: white;
+        height: 85px;
+    }
+
+
+    header .header{
+        height: 50px;
+    }
+
+
+    a.active {
+        color: var(--primary-color);
+        text-decoration: none;
+    }
+     
+    .active {
+        color: var(--primary-color);
+    }
+
+    header a {
+        color: white;
+        text-decoration: none;
+    }
+
+
+    header i {
     color: var(--primary-color);
-    text-decoration: none;
-}
-.container {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-header {
-    height: 85px;
-    color:white;
-    background-color: aqua;
-}
-
-header .wrapper {
-    height: 50px;
-    background-color: rgba(207, 175, 175, 0.8);
-}
-
-header {
-    color: white
-    text-decoration: none;
-}
-
-header i {
-    color: var(--primary-color);
-}
-
-header .info-header{
-    height: 35px;
-}
-
-header .header {
-    height: 50px;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    }
 
 
-header .contact,
-header .lang a {
-    font-size: 12px;
-}
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-header nav {
 
-}
+    header .contact
+    header .lang a {
+        font-size: 12px;
+    }
 
-header nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-}
 
-header nav ul li ul {
-    display: none;
-}
+    header .wrapper {
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 
-main {
-    height: calc(100vh - 85px);
-    display: flex;
-    align-items: center;
-}
 
-main .container{
-    height: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    header .logo a {
+        text-transform: uppercase;
+        font-size: 25px;
+    }
 
-main .play-icon {
-    width: 70px;
-    height: 70px;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    border: 10px solid rgba(236, 165, 42, 0.4);
-    display: flex ;
-    justify-content: center;
-    align-items: center;
 
-}
+    header .info-header {
+        height: 35px;
+    }
 
-main .play-icon i {
-    color: white;
-    font-size: 42px;
-    padding-left: 5px;
-}
+
+    header nav {
+    }
+
+    header nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+    }
+
+
+    header nav ul li ul {
+        display: none;
+    }
+
+
+    main {
+        height: calc(100vh - 85px);
+        display: flex;
+        align-items: center;
+    }
+
+
+    main .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 300px;
+    }
+
+
+    main .icon {
+        width: 70px;
+        height: 70px;
+        box-sizing: content-box;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        display: flex;
+        border: 5px solid rgba(254, 255, 255, 0.4);
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    main .icon i {
+        color: white;
+        font-size: 32px;
+        padding-left: 5px;
+    }
+
+
+    main h1 {
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+
+    main h1 span {
+        color: var(--primary-color);
+        padding-left: 10px;
+    }
+
+
+    main p {
+        color: white;
+        margin: 15px 0px 25px 0px;
+    }
+
+
+    .btn {
+        border: 1px solid var(--primary-color);
+        padding: 0px 20px;
+        font-size: 12px;
+        height: 30px;
+        border-radius: 15px;
+        display: inline-block;
+        line-height: 30px;
+        text-decoration: none;
+        color: white;
+        transition: all .4s;
+    }
+
+
+    .btn:hover {
+        background-color: var(--primary-color);
+    }
+
+
+    section#intro {
+        height: 600px;
+        background-color: black;
+        background:linear-gradient(0deg, rgba(32, 30, 31, 0.4), rgba(34, 32, 33,
+        0.7)), url(../images/FcJGdTPWAAQF-11.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+    }
+
+
+    section#intro .container {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 30px;
+        color: azure;
+    }
+
+
+    section#intro h3 {
+        color:azure;
+        padding-bottom: 20px;
+    }
+
+
+    section#intro ul {
+        margin: 20px 0px;
+        list-style-type: none;
+    }
+
+
+    section#intro ul li {
+        padding: 10px 0px;
+        line-height: 35px;
+    }
+
+    section#intro p {
+        margin: 10px 0px;
+    }
+
+
+    section#intro img {
+        display: block;
+        width: 100%;
+        border: 2px solid rgb(150, 154, 150);
+        padding: 5px;
+    }
+
+
+    section#why-us {
+        padding-left: 80px 0px;
+        color: whitesmoke;
+        background-color: black;
+    }
+
+
+    section#why-us .reasons {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+
+    section#why-us .card {
+        padding: 40px 25px;
+        background-color: rosybrown;
+        box-shadow: 0px 2px 15px rgba(254, 255, 255, 0.4);
+        transition: all .4sc;
+        position: relative;
+    }
+
+    section#why-us .card span
+    section#why-us .card h4 {
+        font-size: 20px;
+    }
+
+
+    section#why-us .card span {
+        font-weight: 700;
+        color: var(--primary-color);
+    }
+
+
+    section#why-us .card h4 {
+        font-weight: 400;
+        margin: 20px 0px;
+    }
+
+    section#why-us .card p {
+        font-size: 20px;
+    }
+
+
+    section#giussepe world {
+        padding: 60px 0px;
+        background: #1a1814;
+    }
+
+
+    section#giussepe world .categories {
+        margin: 40px 0;
+        display: flex;
+        justify content: center;
+    }
+
+    section#giussepe world .categories ul {
+        color: white;
+        list-style-type: none;
+        display: flex;
+        gap: 30px;
+    }
+
+
+    section#giussepe world .categories ul li {
+        transition: all .4sc;
+    }
+
+    section#giussepe world .categories ul li:hover {
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+
+    section#giussepe world .items {
+        display: grid;
+        grid-template-columns: 
+        1fr 1fr;
+        gap: 40px;
+    }
+
+
+    section#giussepe world .items {
+        color: azure;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 60px 1fr 80px;
+    }
+
+
+    section#giusspe world .items img {
+        width: 50px;
+        border: 3px solid rgba 
+        (255, 255, 255, 0.8);
+        padding: 2px;
+        border-radius: 50%;
+    }
+
+    section#giusspe world .items .price {
+        color: var(--primary-color);
+    }
+
+    section#giusspe world .items .ing{
+        font-size: 14px;
+        margin-top: 5px;
+        color:  #aaaa;
+    }
+    
+    section#giusspe world .items .title {
+        white-space: nowrap;
+        display: flex;
+    }
+    section#giusspe world .items .title span {
+        display: inline-block;
+        width: 100%;
+        margin-left: 8px;
+        margin-top: 10px;
+        border-top: 1px dotted #aaa;
+    }
+
